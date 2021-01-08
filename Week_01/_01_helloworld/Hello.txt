@@ -1,0 +1,119 @@
+Classfile /E:/Lessons/project/JavaCourse/_01_JVM/target/classes/_01_HelloWorld/Hello.class
+  Last modified 2021-1-8; size 676 bytes
+  MD5 checksum 33349c55e73dc2614660addec142fbfb
+  Compiled from "Hello.java"
+public class _01_HelloWorld.Hello
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #6.#25         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #5.#26         // _01_HelloWorld/Hello.a:I
+   #3 = Fieldref           #27.#28        // java/lang/System.out:Ljava/io/PrintStream;
+   #4 = Methodref          #29.#30        // java/io/PrintStream.println:(I)V
+   #5 = Class              #31            // _01_HelloWorld/Hello
+   #6 = Class              #32            // java/lang/Object
+   #7 = Utf8               a
+   #8 = Utf8               I
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               LocalVariableTable
+  #14 = Utf8               this
+  #15 = Utf8               L_01_HelloWorld/Hello;
+  #16 = Utf8               main
+  #17 = Utf8               ([Ljava/lang/String;)V
+  #18 = Utf8               i
+  #19 = Utf8               args
+  #20 = Utf8               [Ljava/lang/String;
+  #21 = Utf8               m
+  #22 = Utf8               <clinit>
+  #23 = Utf8               SourceFile
+  #24 = Utf8               Hello.java
+  #25 = NameAndType        #9:#10         // "<init>":()V
+  #26 = NameAndType        #7:#8          // a:I
+  #27 = Class              #33            // java/lang/System
+  #28 = NameAndType        #34:#35        // out:Ljava/io/PrintStream;
+  #29 = Class              #36            // java/io/PrintStream
+  #30 = NameAndType        #37:#38        // println:(I)V
+  #31 = Utf8               _01_HelloWorld/Hello
+  #32 = Utf8               java/lang/Object
+  #33 = Utf8               java/lang/System
+  #34 = Utf8               out
+  #35 = Utf8               Ljava/io/PrintStream;
+  #36 = Utf8               java/io/PrintStream
+  #37 = Utf8               println
+  #38 = Utf8               (I)V
+{
+  public static int a;
+    descriptor: I
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public _01_HelloWorld.Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   L_01_HelloWorld/Hello;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iconst_0
+         1: istore_1
+         2: iconst_0
+         3: istore_2
+         4: iload_2
+         5: bipush        10
+         7: if_icmpge     30
+        10: iload_1
+        11: iload_2
+        12: iadd
+        13: istore_1
+        14: iload_1
+        15: getstatic     #2                  // Field a:I
+        18: if_icmple     24
+        21: goto          30
+        24: iinc          2, 1
+        27: goto          4
+        30: getstatic     #3                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        33: iload_1
+        34: invokevirtual #4                  // Method java/io/PrintStream.println:(I)V
+        37: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 2
+        line 8: 10
+        line 9: 14
+        line 10: 21
+        line 7: 24
+        line 13: 30
+        line 14: 37
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            4      26     2     i   I
+            0      38     0  args   [Ljava/lang/String;
+            2      36     1     m   I
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: bipush        10
+         2: putstatic     #2                  // Field a:I
+         5: return
+      LineNumberTable:
+        line 4: 0
+}
+SourceFile: "Hello.java"
