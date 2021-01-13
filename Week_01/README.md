@@ -40,7 +40,7 @@
 
 GC 有哪些？都有什么特点？
 
-- ![](\week_01_2\image-20210113163126798.png)
+- ![](\image\image-20210113163126798.png)
   - -XX:+UseG1GC                                            使用 G1 垃圾回收器
   - -XX:+UseConcMarkSweepGC                   使用 CMS 垃圾回收器
   - -XX:+UseSerialGC                                       使用串行垃圾回收器
